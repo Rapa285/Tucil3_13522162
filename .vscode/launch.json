@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "ReadFile",
+            "request": "launch",
+            "mainClass": "src.ReadFile",
+            "projectName": "Tucil3_13522162_1fe49037"
+        },
+        {
+            "type": "java",
+            "name": "TOCAPS",
+            "request": "launch",
+            "mainClass": "src.TOCAPS",
+            "projectName": "Tucil3_13522162_1fe49037"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "src.Main",
+            "projectName": "Tucil3_13522162_1fe49037"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "WorldLadder",
+            "request": "launch",
+            "mainClass": "WorldLadder",
+            "projectName": "Tucil3_13522162_1fe49037"
+        }
+    ]
+}
