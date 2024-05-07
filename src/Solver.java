@@ -26,7 +26,15 @@ public class Solver {
     public Integer getCount(){
         return count;
     }
-    
+    public static int getDistance(String string1,String string2){ //Menggunakan Hamming Distance
+        int value = 0;
+        for (int i = 0; i<string1.length();i++){
+            if (string1.charAt(i) != string2.charAt(i)){
+                value++;
+            }
+        }
+        return value;
+    }
     public List<String> solve_UCS(){
         //System.out.println("flag inside ucs");
         Queue<List<String>> queue = new LinkedList<List<String>>();
@@ -43,7 +51,7 @@ public class Solver {
             String currentWord = currentList.get(currentList.size()-1);
             visited.put(currentWord,true);
             for (String word : dict) {
-                if (!currentList.contains(word) && String_Matching.getDistance(word,currentWord) == 1 && !visited.containsKey(word)){
+                if (!currentList.contains(word) && getDistance(word,currentWord) == 1 && !visited.containsKey(word)){
                     List<String> temp = new ArrayList<String>(currentList);
                     temp.add(word);
                     queue.offer(temp);
@@ -73,8 +81,8 @@ public class Solver {
             String min_dis_word = "";
             addCount();
             for (String word : dict) {
-                int distance = String_Matching.getDistance(endWord, word);
-                if (distance < min_distance && String_Matching.getDistance(word, currentWord) == 1 && !ladder.contains(word)){
+                int distance = getDistance(endWord, word);
+                if (distance < min_distance && getDistance(word, currentWord) == 1 && !ladder.contains(word)){
                     min_dis_word = word;
                     min_distance = distance;
                 }
@@ -98,7 +106,7 @@ public class Solver {
         PriorityQueue<StringNode> queue = new PriorityQueue<>(new NodeComparator());
         List<String> ladder = new ArrayList<String>();
         ladder.add(startWord);
-        StringNode start = new StringNode(ladder,String_Matching.getDistance(startWord, endWord));
+        StringNode start = new StringNode(ladder,getDistance(startWord, endWord));
         queue.add(start);
         //System.out.println("is queue empty "+queue.isEmpty());
         Map<String, Boolean> visited = new HashMap<>();
@@ -111,10 +119,10 @@ public class Solver {
             String currentWord = currentList.get(currentList.size()-1);
             visited.put(currentWord,true);
             for (String word : dict) {
-                if (!currentList.contains(word) && String_Matching.getDistance(word,currentWord) == 1 && !visited.containsKey(word)){
+                if (!currentList.contains(word) && getDistance(word,currentWord) == 1 && !visited.containsKey(word)){
                     List<String> temp_list = new ArrayList<String>(currentList);
                     temp_list.add(word);
-                    Integer temp_cost = currentcost + String_Matching.getDistance(word, endWord);
+                    Integer temp_cost = currentcost + getDistance(word, endWord);
                     queue.add(new StringNode(temp_list,temp_cost));
                     if (word.equals(endWord)){
                         //System.out.println("found flag");
