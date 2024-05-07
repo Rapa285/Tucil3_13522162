@@ -1,6 +1,5 @@
 # Penyelesaian Permainan Word Ladder Menggunakan Algoritma UCS, Greedy Best First Search, dan A*
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -17,69 +16,79 @@
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Program ini adalah Tugas Kecil ke-3 Mata Kuliah Strategi Algoritma Institut Teknologi Bandung.
+- Program ini berisi Algoritma Solver untuk permainan Word Ladder karya Lewis Carroll berbasis Java. 
+- Terdapat 3 algoritma solver yaitu UCS,GBFS(Greedy Best First Search), dan A*.
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- JVM version - 20.0.2
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
 
+Word Ladder Solver Algorithm
+- UCS Algorithm
+- Greedy Best First Search Algorithm
+- A* Algorithm
+
+Dictionary yang dipakai
+- https://docs.oracle.com/javase/tutorial/collections/interfaces/examples/dictionary.txt
+- https://drive.google.com/open?id=1oGDf1wjWp5RF_X9C7HoedhIWMh5uJs8s
+- https://github.com/dwyl/english-words/blob/master/words_alpha.txt
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+Tampilan Awal
+![image](https://github.com/Rapa285/Tucil3_13522162/assets/130206972/704eb6b4-ab6f-4c4c-aa21-9b4280978ecb)
+
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
 
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Menggunakan JVM version - 20.0.2
+Untuk nge-run tinggal run Main.java
 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
 
-`write-your-code-here`
+Ada 6 Command
+---------- INFO ----------
+Start Word : 
+Target Word : 
+Current Dictionary : Dictionary Asisten
+-------- COMMANDS --------
+1). DICT (change dictionary)
+2). WORD (change start Word and target Word)
+3). UCS (Solve using UCS algorithm)
+4). GREEDY (Solve using Greedy Best First Search Algorithm)
+5). A* (Solve using A* Algorithm)
+6). END (End Program)
+7). INFO (Displays Current Start,Target, and Dictionary)
+8). HELP (Displays This Commands List)
+
+Command 3-5 tidak bisa dijalankan jika start word dan target word belum terisi.
+Command tidak case sensitive
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _complete_
 
 
 ## Room for Improvement
 Include areas you believe need improvement / could be improved. Also add TODOs for future development.
 
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
+- GUI
 
-To do:
-- Feature to be added 1
-- Feature to be added 2
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by Pradipta Rafa Mahesa - 13522162
 
 
 <!-- Optional -->
