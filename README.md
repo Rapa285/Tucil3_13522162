@@ -39,6 +39,7 @@ Dictionary yang dipakai
 
 ## Screenshots
 Tampilan Awal
+
 ![image](https://github.com/Rapa285/Tucil3_13522162/assets/130206972/704eb6b4-ab6f-4c4c-aa21-9b4280978ecb)
 
 <!-- If you have screenshots you'd like to share, include them here. -->
@@ -53,21 +54,27 @@ Untuk nge-run tinggal run Main.java
 ## Usage
 
 Ada 6 Command
----------- INFO ----------
-Start Word : 
-Target Word : 
-Current Dictionary : Dictionary Asisten
+
 -------- COMMANDS --------
+
 1). DICT (change dictionary)
+
 2). WORD (change start Word and target Word)
+
 3). UCS (Solve using UCS algorithm)
+
 4). GREEDY (Solve using Greedy Best First Search Algorithm)
+
 5). A* (Solve using A* Algorithm)
+
 6). END (End Program)
+
 7). INFO (Displays Current Start,Target, and Dictionary)
+
 8). HELP (Displays This Commands List)
 
-Command 3-5 tidak bisa dijalankan jika start word dan target word belum terisi.
+Command 3-5 tidak bisa dijalankan jika start word dan target word belum terisi (dapat dilihat dengan info).
+
 Command tidak case sensitive
 
 
@@ -76,7 +83,7 @@ Project is: _complete_
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
+
 
 Room for improvement:
 - GUI
