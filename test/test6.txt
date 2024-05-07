@@ -1,0 +1,3 @@
+word
+start : hate
+end : love

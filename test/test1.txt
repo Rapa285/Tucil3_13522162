@@ -1,0 +1,3 @@
+word
+start : earn
+end : make

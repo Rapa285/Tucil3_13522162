@@ -1,0 +1,3 @@
+word
+start : you
+end : gay

@@ -1,0 +1,3 @@
+word
+start : frown
+end : smile
