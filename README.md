@@ -48,6 +48,7 @@ Tampilan Awal
 ## Setup
 
 Menggunakan JVM version - 20.0.2
+
 Untuk nge-run tinggal run Main.java
 
 
